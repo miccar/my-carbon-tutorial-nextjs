@@ -48,10 +48,16 @@ const TutorialHeader = () => (
             <HeaderMenuItem>Workflow</HeaderMenuItem>
           </Link>
         </HeaderNavigation>
+        <HeaderNavigation aria-label="Chat">
+          <Link href="/chat" passHref legacyBehavior>
+            <HeaderMenuItem>Chat</HeaderMenuItem>
+          </Link>
+        </HeaderNavigation>
         <SideNav
           aria-label="Side navigation"
           expanded={isSideNavExpanded}
-          isPersistent={false}>
+          isPersistent={false}
+        >
           <SideNavItems>
             <HeaderSideNavItems>
               <Link href="/repos" passHref legacyBehavior>
@@ -78,19 +84,22 @@ const TutorialHeader = () => (
           <HeaderGlobalAction
             aria-label="Notifications"
             tooltipAlignment="center"
-            className="action-icons">
+            className="action-icons"
+          >
             <Notification size={20} />
           </HeaderGlobalAction>
           <HeaderGlobalAction
             aria-label="Language"
             tooltipAlignment="center"
-            className="action-icons">
+            className="action-icons"
+          >
             IT
           </HeaderGlobalAction>
           <HeaderGlobalAction
             aria-label="User Avatar"
             tooltipAlignment="center"
-            className="action-icons">
+            className="action-icons"
+          >
             <UserAvatar size={20} />
           </HeaderGlobalAction>
           <HeaderGlobalAction aria-label="App Switcher" tooltipAlignment="end">
